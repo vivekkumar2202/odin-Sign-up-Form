@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'odin';
+    src: url('fonts/Norse-Bold.otf');
+}
 body {
     display: flex;
     align-items: center;
@@ -55,6 +59,7 @@ input {
 .logo > p {
     display: inline;
     color: white;
+    font-family: 'odin';
     font-size: 100px;
 }
 
