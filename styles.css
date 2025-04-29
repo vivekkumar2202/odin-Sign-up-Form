@@ -1,7 +1,121 @@
 body {
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0px;
 }
 
-.side-image{
+p {
+    max-width: 50ch;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 170px;
+    margin-left: 30px;
+    background-color: #033757;
+    color: White;
+    flex-grow: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
+
+.images {
+    flex: 1 1 auto;
+    display: flex;
+    background-color: black;
+    position: relative;
+}
+
+.images > p {
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+}
+
+.logo {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+
+.logo > img {
+    height: 100px;
+}
+
+.logo > p {
+    display: inline;
+    color: white;
+    font-size: 100px;
+}
+
+
+.background {
     height: 100vh;
+    flex: 1 1 auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+    height: 100vh;
+    flex: 1 1 auto;
+}
+
+.message {
+    margin-bottom: 40px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.form-area {
+    background-color: #ffffff;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.name,
+.contact,
+.password {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+.password input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.end {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.end > a {
+    color: #033757;
 }

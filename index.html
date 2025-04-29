@@ -4,33 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Sign-up Form</title>
 </head>
 <body>
-    <img src="images/jason-leung-pE1wCrDxH14-unsplash.jpg" class = "side-image">
-    <div>
-        <p>This is not a real online service! You know you need something like this in your life
-            to help you realize your deepest dreams.
+    <div class = "images">
+        <img src="images/jason-leung-pE1wCrDxH14-unsplash.jpg" class = "background">
+        <div class = "logo">
+            <img src="images/odin-lined.png" >
+            <p>odin</p>
+        </div>
+        <p>Photo by 
+            <a href="https://unsplash.com/@ninjason?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                Jason Leung
+            </a> 
+            on 
+            <a href="https://unsplash.com/photos/a-bunch-of-blurry-images-of-a-building-pE1wCrDxH14?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                Unsplash
+            </a>
         </p>
-        <p>Sign up now to get started</p>
-        <p>You know want to.</p>
-        <p>Let's fo this!</p>
-        <form action = "#" method = "get">
-            <label for = "first-name">FIRST NAME</label>
-            <input type = "text" id = "first-name">
-            <label for = "last-name">LAST NAME</label>
-            <input type = "text" id = "last-name">
-            <label for = "email">EMAIL</label>
-            <input type = "email" id = "email">
-            <label for = "phone">PHONE NUMBER</label>
-            <input type = "tel" id = "phone">
-            <label for = "password">PASSWORD</label>
-            <input type = "password" id = "password">
-            <label for = "confirm">CONFIRM PASSWORD</label>
-            <input type = "password" id = "confirm">
-        </form>
+    </div>
+    <div class = "text">
+        <div class = "message">
+            <p>This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams.<br>Sign up now to get started.</p>
+            <p>You know want to.</p>
+        </div>
+        <div class="form-area">
+            <p>Let's do this!</p>
+            <form action = "#" method = "get">
+                <div class = "name">
+                    <div class = "form">
+                        <label for = "first-name">FIRST NAME</label>
+                        <input type = "text" id = "first-name">
+                    </div>
+                    <div class = "form">
+                        <label for = "last-name">LAST NAME</label>
+                        <input type = "text" id = "last-name">
+                    </div>
+                </div>
+                <div class = "contact">
+                    <div class = "form">
+                        <label for = "email">EMAIL</label>
+                        <input type = "email" id = "email">
+                    </div>
+                    <div class = "form">
+                        <label for = "phone">PHONE NUMBER</label>
+                        <input type = "tel" id = "phone">
+                    </div>
+                </div>
+                <div class = "password">
+                    <div class = "form">
+                        <label for = "password">PASSWORD</label>
+                        <input type = "password" id = "password" required>
+                    </div>
+                    <div class = "form">
+                        <label for = "confirm">CONFIRM PASSWORD</label>
+                        <input type = "password" id = "confirm" required>
+                    </div>
+                </div>
+            </form>
+        </div>
         <button type="submit">Create Account</button>
-        <p>Already have an account? Log in</p>
+        <p class = "end">Already have an account? <a>Log in</a></p>
     </div>
 </body>
 </html>
